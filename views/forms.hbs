@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibrant Ventures -About Us</title>
+  <link rel="stylesheet" href="/css/bookingform.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="/home-page" id="logo">Vibrant<span>Ventures</span></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/home-page">Home</a></li>
+        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/booking-form" class="active">Booking</a></li>
+        <li><a href="/contact-us">Contact Us</a></li>
+        <li id="signup"><a href="/sign-up">Sign Up</a></li>
+        <li id="logout"><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Title -->
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Vibrant Ventures</h2>
+      <p>Allow us to be your trusted guide as you uncover the extraordinary and embrace the remarkable.</p>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="booking-form">
+    <div class="container">
+      <h2>Book Your Adventure</h2>
+      <form id="travel-form">
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" required>
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date" required>
+
+        <label for="flight-type">Flight Type:</label>
+        <select id="flight-type" name="flight-type" required>
+          <option value="">Select an option</option>
+          <option value="First/Business_Class">First/Business Class</option>
+          <option value="Economy_Class">Economy Class</option>
+        </select>
+
+        <label for="hotel">Select Hotel:</label>
+        <select id="hotel" required>
+          <option value="">Select an option</option>
+          <option value="FC_Hotel">FC Hotel( &#9733 &#9733 &#9733 &#9733 &#9733 )</option>
+          <option value="CJ_Hotel">CJ Hotel( &#9733 &#9733 &#9733 &#9734 &#9734 )</option>
+          <option value="BL_Hotel">BL Hotel ( &#9733 &#9733 &#9733 &#9733 &#9734 )</option>
+        </select>
+
+        <label for="travel">Travel Options:</label>
+        <select id="travel">
+          <option value="">Select an option</option>
+          <option value="Car_Rental">Car Rental</option>
+          <option value="Bike_Rental">Bike Rental</option>
+          <option value="Bus_Pass">Bus Pass</option>
+        </select>
+
+        <label for="service">Choose Service:</label>
+        <select id="service" required>
+          <option value="">Select an option</option>
+          <option value="Adventure_Tour">Adventure Tour</option>
+          <option value="Nature_Tour">Nature Tour</option>
+          <option value="Cultural_Experience">Cultural Experience</option>
+          <option value="Wildlife_Safaris">Wildlife Safaris</option>
+          <option value="Cultural_Immersion">Cultural Immersion</option>
+        </select>
+
+        <label for="special-requests">Special Requests:</label> 
+        <textarea id="special-requests" rows="4" cols="50"
+          placeholder="Enter any special requests here..."></textarea>
+
+        <input type="submit" value="Book Now">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Vibrant Ventures. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/validate.js"></script>
+  <script src="/js/booking2.js"></script>
+</body>
+
+</html>

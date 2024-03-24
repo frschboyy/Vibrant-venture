@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Details</title>
+    <link rel="stylesheet" href="/css/report.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="/home-page" id="logo">Vibrant<span>Ventures</span></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/home-page">Home</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/booking-form" class="active">Booking</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+                <li id="signup"><a href="/sign-up">Sign Up</a></li>
+                <li id="logout"><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Table -->
+    <h1>Travel Information</h1>
+    <table>
+        <thead>
+            <tr>
+                <th> </th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each bookingData}}
+            <tr>
+                <td class = "det">Full Name</td>
+                <td>{{user.fName}} {{user.lName}}</td>
+            </tr>
+            <tr>
+                <td class = "det">Email</td>
+                <td>{{user.email}}</td>
+            </tr>
+            <tr>
+                <td class = "det">Departure</td>
+                <td>{{depDate}}</td>
+            </tr>
+            <tr>
+                <td class = "det">Return</td>
+                <td>{{retDate}}</td>
+            </tr>
+            <tr>
+                <td class = "det">Flight Type</td>
+                <td>{{fltType}}</td>
+            </tr>
+            <tr>
+                <td class = "det">Hotel</td>
+                <td>{{hotType}}</td>
+            </tr>
+            <tr>
+                <td class = "det">Service</td>
+                <td>{{service}}</td>
+            </tr>
+            <tr>
+                <td class = "det">Travel Option</td>
+                <td>{{travOpt}}</td>
+            </tr>
+            <tr>
+                <td class = "det">Special Requests</td>
+                <td>{{reqMess}}</td>
+            </tr>
+            <tr>
+                <td  class = "null">------------</td>
+                <td  class = "null">------------</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <script src="js/validate.js"></script>
+</body>
+
+</html>

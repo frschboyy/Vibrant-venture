@@ -1,0 +1,185 @@
+:root {
+  --maincolor: #08bc17;
+  --secondclr: #2b58ea;
+  --thirdcolor: #Ff6600;
+}
+
+body,
+html {
+  height: 100%;
+  /* Ensure the full height for background */
+  margin: 0;
+}
+
+body {
+  /* Background image setup */
+  background-image: url('../images/signup.jpg');
+  /* Update this path */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 2rem 7%;
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 100000;
+  background-color: white;
+  padding: 25px;
+}
+
+.header #logo {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.header #logo span {
+  color: #FF6600;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  /* margin-left: 2rem; */
+  /* padding: 1.2rem; */
+  color: #FF6600;
+  flex: 100;
+  text-align: right;
+}
+
+.navbar ul li a.active {
+  color: var(--secondclr);
+  /* A contrasting color for the active link */
+  font-weight: bold;
+  /* Make the active link bold */
+  border-bottom: 2px solid var(--secondclr);
+  /* Underline the active link */
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Make this div fill the height of the viewport */
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Semi-transparent background */
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  /* Adjusted to 'auto' for centering in the flex container */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* Centering adjustments */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center align items for smaller screens */
+}
+
+/* Form elements styling */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container h2 {
+  color: var(--thirdcolor);
+  /* Use the color scheme from your site */
+  margin-bottom: 1rem;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  /* Light border */
+  border-radius: 4px;
+  /* Rounded edges for input fields */
+}
+
+.form-container input[id = "email"],
+.form-container input[id ="uName"] {
+  text-transform: lowercase;
+}
+
+.form-container button[type="submit"] {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: var(--maincolor);
+  /* Use vibrant color for the button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: var(--secondclr);
+  /* Darker shade on hover */
+}
+
+.account-link {
+  margin-top: 1rem;
+  /* Adjust spacing to fit your design */
+  font-size: 0.9rem;
+  /* Slightly smaller font size */
+  text-align: center;
+  /* Center align the text */
+}
+
+.account-link a {
+  color: var(--maincolor);
+  /* Use your theme color */
+  text-decoration: none;
+  /* Optional: removes underline */
+}
+
+.account-link a:hover {
+  text-decoration: underline;
+  /* Restores underline on hover for clarity */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+
+  .form-container {
+    width: 95%;
+    padding: 15px;
+  }
+}

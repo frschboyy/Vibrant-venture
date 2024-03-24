@@ -1,0 +1,172 @@
+:root {
+  --maincolor: #08bc17;
+  --secondclr: #2b58ea;
+  --thirdcolor: #Ff6600;
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 7%;
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 100000;
+  background-color: white;
+}
+
+.header #logo {
+  color: black;
+  font-size: 2rem;
+}
+
+.header #logo span {
+  color: var(--thirdcolor);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  /* margin-left: 2rem; */
+  /* padding: 1.2rem; */
+  color: var(--thirdcolor);
+  flex: 100;
+  text-align: right;
+}
+
+.navbar ul li a.active {
+  color: var(--secondclr);
+  /* A contrasting color for the active link */
+  font-weight: bold;
+  /* Make the active link bold */
+  border-bottom: 2px solid var(--secondclr);
+  /* Underline the active link */
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.content {
+  background: url(../images/slideshow6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  /* margin-top: 0%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h1 {
+  color: #Ff6600;
+  font-size: 60px;
+  align-items: center;
+}
+
+.text p {
+  color: var(--maincolor);
+  font-size: 20px;
+  line-height: 15px;
+  line-break: normal;
+}
+
+.text span {
+  color: var(--secondclr);
+}
+
+.hero-btn {
+  width: 100px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px 0;
+  background: #fff;
+  border: 1px solid #f60;
+  background: #f60;
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f60;
+  background: transparent;
+  transition: 1s;
+}
+
+footer {
+  background: #f58025;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.header #logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header .icons {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: space-around;
+    padding: 5px;
+  }
+
+  .header #logo {
+    margin-bottom: 10px;
+  }
+
+  .header nav.navbar {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .header .navbar a {
+    display: block;
+    margin-bottom: 5px;
+  }
+}

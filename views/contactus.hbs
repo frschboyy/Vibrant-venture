@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Vibrant Ventures</title>
+  <link rel="stylesheet" type="text/css" href="/css/contactus.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="/home-page" id="logo">Vibrant<span>Ventures</span></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/home-page">Home</a></li>
+        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/booking-form">Booking</a></li>
+        <li><a href="/contact-us" class="active">Contact Us</a></li>
+        <li id="signup"><a href="/sign-up">Sign Up</a></li>
+        <li id="logout"><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+        <form id="contact-form">
+          <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+          <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Vibrant Ventures. All rights reserved.</p>
+  </footer>
+
+  <script src="js/validate.js"></script>
+  <script src="/js/contactus.js"></script>
+</body>
+
+</html>
